@@ -1,0 +1,17 @@
+<ul class="collapsible popout" data-collapsible="expandable">
+$for(posts)$
+        <li>
+          <!-- keep 'active' in class name for the most recent collapsible view, to keep it in focus when loaded first -->
+            <div class="collapsible-header waves-effect waves-light grey darken-2 white-text">
+              <i class="material-icons">trending_flat</i>
+              <b>$title$</b>
+            </div>
+          
+              <div class="collapsible-body gray lighten-6">
+                <div class="details">
+                    $body$
+                  </div>
+              </div>
+        </li>
+$endfor$
+</ul>

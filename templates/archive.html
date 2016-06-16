@@ -1,0 +1,18 @@
+
+$for(posts)$
+<ul class="collapsible" data-collapsible="expandable">
+        <li>
+          <!-- keep 'active' in class name for the most recent collapsible view, to keep it in focus when loaded first -->
+            <div class="collapsible-header waves-effect waves-light indigo darken-2 white-text">
+              <i class="material-icons">trending_flat</i>
+              <b>$date$ - $title$</b>
+            </div>
+          
+              <div class="collapsible-body blue lighten-6">
+                <ul class="details">
+                    $body$
+                  </ul>
+              </div>
+        </li>
+</ul>
+$endfor$
